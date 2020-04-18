@@ -3,7 +3,7 @@
 ## Clone repo
 
 * `cd ~/`
-* `git clone https://github.com/CoreELEC/CoreELEC.git CoreELEC`
+* `git clone git://github.com/CoreELEC/CoreELEC.git CoreELEC`
 
 ## Build the container
 
@@ -14,4 +14,4 @@
 
 * `docker run -v ~/:/home/docker -h coreelec -it coreelec`
 * `cd ~/CoreELEC`
-* `make image`
+* `time(PROJECT=Amlogic-ng ARCH=arm make image)` (Use `PROJECT=Amlogic` to build images for older S912 and S905/X/D devices)
